@@ -14,7 +14,7 @@ public class Generics_Type {
 		ArrayList<Product> productlist = new ArrayList<Product>();
 		ArrayList<Tv> tvList = new ArrayList<Tv>();
 		
-		productlist.add(new Tv()); //지네익 타입이 Product 이면서 Product의 자손 class를 넣을 수 있다.
+		productlist.add(new Tv()); //Generics 타입 생성할 때는 생성자와 매개변수의 지네릭을 맞춰야 하지만 생성후에는 지네릭 타입의 자손 class도 add로 가능
 		productlist.add(new Audio());
 		
 		tvList.add(new Tv());
